@@ -1,0 +1,40 @@
+@media screen and (max-width: 600px) {
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .col{
+        flex-direction: column;
+    }
+    .col-rev{
+        flex-direction: column-reverse;
+    }
+    .row{
+        flex-direction: row;
+    }
+    header{
+        padding: 0.5rem 0;
+        height: fit-content;
+    }
+    header li{
+        margin: 2rem 0;
+    }
+    .flex-50{
+        flex: 0 1 100%;
+    }
+    .flex-30{
+        flex: 0 1 100%;
+        margin: 1rem 0;
+    }
+    footer .flex{
+        padding: 1rem 0;
+    }
+    footer .flex li a{
+        color: grey;
+    }
+    .blog{
+        padding:1rem;
+    }
+  }
