@@ -1,0 +1,221 @@
+/*==========mobile==========*/
+@media screen and (max-width:768px){
+    header nav{display: none;}
+    header label{
+        z-index: 999;
+        display: inline-block;
+        font-size: 32px;
+        color: white;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .nav-hidden{
+        border-radius: 3px;
+        display: none;
+        position: absolute;
+        top:10px;
+        right: 5px;
+        height: fit-content;
+        width: 50vw;
+        background-color: rgba(48, 0, 124, 0.596);
+        padding-bottom: 50px;
+    }
+    .full-screen{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(86, 98, 207, 0.897);
+    }
+    input:checked ~ .nav-hidden{
+        display: inline-block;
+    }
+    .col{
+        flex-direction: column;
+    }
+    .col-r{
+        flex-direction: column-reverse;
+    }
+    .flex-start{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .flex-start li a{
+        color: white;
+        display: inline-block;
+        margin-top: 2rem;
+    }
+    .col-60{
+        flex: 0 1 100%;
+    }
+    .col-50{
+        flex: 0 1 100%;
+    }
+    .col-35{
+        flex: 0 1 100%;
+    }
+    .col-30{
+        flex: 0 1 100%;
+    }
+    .col-55{
+        flex: 0 1 100%;
+    }
+    .col-23{
+        flex: 0 1 100%;
+    }
+    .hero{
+        height: fit-content;
+        background:linear-gradient(var(--blue-transparent),var(--blue-transparent)),url(assets/hero.png) no-repeat, no-repeat;
+        background-size: cover;
+    }
+    .hero-content {
+        color: white;
+    }
+    .hero-content h4{
+        color: white;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .hero-content p{
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    .hero-content img{
+        display: none;
+     }
+     .hero-content a{
+        margin-bottom: 2.5rem;
+    }
+    .about h3{
+        text-transform: uppercase;
+        color: black;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 1rem 0;
+    }
+    .about p{
+        color: black;
+        margin: 1rem 0 ;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    .about a{
+        margin: 0;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+
+
+.join h3{
+    text-transform: uppercase;
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}   
+.join-content{
+    margin-top: 2rem;
+}
+.border-dot{
+    border: 2.5px dashed red;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.join-box{
+    position: relative;
+}
+.join-content h4{
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.join-content p{
+    color: black;
+    margin: 1rem 0 ;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+
+.news h3{
+    text-transform: uppercase;
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.news h4{
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.news p{
+    color: black;
+    margin: 1rem 0 ;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.news-art{
+    margin-bottom: 4rem;
+}
+.footer-upper h3,h4{
+    margin-top: 1rem;
+    margin-right: 2.5rem;
+    text-transform: capitalize;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.col-phone{
+    flex-direction: column;;
+}
+.row-phone{
+    flex-direction: row;
+}
+.quick-links li{
+    margin-right: 2rem;
+}
+.quick-links li a{
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+.follow-us li{
+    margin-right: 2rem;
+}
+.follow-us li a{
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+.schedule-tab p{
+    color: black;
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.schedule-tab h3{
+    color: black;
+    margin: 0.5rem 0  ;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.schedule .btn{
+    font-size: 1rem;
+    padding: 1rem;
+}
+.about .btn{
+    font-size: 1rem;
+    padding: 1rem;
+}
+.hero .btn{
+    font-size: 1rem;
+    padding: 1rem;
+}
+}
