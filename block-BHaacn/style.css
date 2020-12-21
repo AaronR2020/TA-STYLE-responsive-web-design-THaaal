@@ -1,0 +1,454 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*==========full-screen==========*/
+/*==========common==========*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Nunito', sans-serif;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+em{
+    color: var(--button);
+}
+.col-50{
+    flex: 0 1 47%;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+:root{
+    --blue-light:rgb(223,236,255);
+    --blue-medium:rgb(35,52,123);
+    --blue-transparent:rgba(58, 37, 175, 0.63);
+    --blue-dark:rgb(16,33,105);
+    --button:rgb(246,57,97);
+}
+html{
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.padding{
+    padding: 1rem;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.center-align{
+    align-items: center;
+}
+.btn{
+    padding:1vw;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+.btn-primary{
+    background-color: var(--button);
+
+}
+.btn-text{
+    font-weight: 700;
+    text-decoration: underline;
+    color: var(--blue-dark);
+}
+.btn-text:hover{
+    text-decoration: underline;
+    color:var(--button);
+}
+.col{
+    flex-direction: column;
+}
+.col-60{
+    flex:0 1 60%;
+}
+.col-45{
+    flex: 0 1 45%;
+}
+.col-55{
+    flex: 0 1 55%;
+}
+.col-35{
+    flex: 0 1 35%;
+}
+.col-30{
+    flex: 0 1 30%;
+}
+.col-23{
+    flex: 0 1 23%;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+/*==========hero==========*/
+.hero{
+    position: relative;
+    background:linear-gradient(var(--blue-transparent),var(--blue-transparent)),url(assets/banner.png) no-repeat, no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: fit-content;
+}
+.hero h3{
+    font-size:2.2rem;
+    color: white;
+    font-weight: 700;
+}
+nav ul li a{
+    font-size:1.25rem;
+    color: white;
+    margin-left: 1.5rem;
+}
+header label,input{
+    display: none;
+}
+.nav-hidden{
+    display: none;
+}
+/*==========hero-content==========*/
+
+.hero-content{
+    margin-top:3rem ;
+    padding-bottom:3rem ;
+}
+.hero-content h4{
+    color: white;
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+.hero-content p{
+    color: white;
+    font-size: 1.75vw;
+    margin: 1rem 0;
+    line-height: 1.25;
+}
+.hero-content img{
+   max-height: 70vh;
+   object-fit: fill;
+}
+.hero-content a{
+    color: white;
+    font-size: 1.75rem;
+    margin-top: 10px;
+}
+/*==========about==========*/
+.about{
+    background-color:white;
+    width: 100vw;
+    height: fit-content;
+}
+.about h3{
+    text-transform: uppercase;
+    color: black;
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+.about p{
+    color: black;
+    font-size: 1.75vw;
+    margin: 1rem 0;
+    line-height: 1.25;
+}
+.about a{
+    color: white;
+    font-size: 1.75vw;
+}
+/*==========why-join==========*/
+.light-bg{
+    background-color: var(--blue-light);
+    width: 100%;
+    height: fit-content;
+    padding: 2rem;
+}
+.white-bg{
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    padding: 2rem;
+}
+.join h3{
+    text-transform: capitalize;
+    text-align: center;
+    color: black;
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+
+.join-content{
+    margin-top: 3rem;
+}
+.border-dot{
+    border: 2.5px dashed red;
+    padding: 1rem;
+}
+.join-box{
+    position: relative;
+}
+.join-content h4{
+    margin: 2rem 0 0.5rem 0;
+    text-transform: capitalize;
+    color: black;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+.join-content p{
+    color: black;
+    font-size: 1.75vw;
+    margin: 1rem 0;
+    line-height: 1.25;
+}
+.number{
+    background-color: var(--blue-light);
+    position: absolute;
+    top: 0;
+    left: 15px;
+    margin-top: -20px;
+    padding:0 10px ;
+    color: red;
+    font-weight: 700;
+    font-size: 2rem;
+}
+/*==========overview==========*/
+.overview-content-item:hover{
+    background-color: var(--button);
+    color: white;
+    border-radius: 4px;
+    
+}
+.overview-content-item{
+    padding: 2rem 0;
+}
+.overview img{
+    height: 50px;
+    object-fit: scale-down;
+}
+.overview h6{
+    line-height: 1.25;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700
+}
+.overview h5{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+/*==========video==========*/
+video{
+    width: 100%;
+}
+/*==========news==========*/
+.news h3{
+    margin: 2rem 0 0.5rem 0;
+    text-transform: capitalize;
+    color: black;
+    font-size: 3vw;
+    font-weight: 700;
+    text-align: center;
+}
+.news h4{
+    margin: 2rem 0 0.5rem 0;
+    text-transform: capitalize;
+    color: black;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+.news p{
+    font-size: 1.75vw;
+    margin: 1rem 0;
+    line-height: 1.25;
+    color: rgb(70, 70, 70);
+}
+.dark-bg{
+    background-color: var(--blue-medium);
+}
+.footer-upper img{
+    margin: auto 0;
+    width: 80%;
+}
+.footer-upper a{
+    color: #c9c9c9;
+    font-size: 1.25vw;
+}
+.footer-upper h3,h4{
+    margin: 0 0 0.75rem 0;
+    text-transform: capitalize;
+    color: white;
+    font-size: 1.75vw;
+    font-weight: 700;
+}
+.center{
+    justify-content: center;
+ }
+ .start{
+    justify-content: start;
+ }
+
+.quick-links li{
+    margin-right: 2rem;
+}
+.quick-links li a{
+    font-size: 1.5vw;
+}
+.follow-us li{
+    margin-right: 2rem;
+}
+.center-text{
+    width: fit-content;
+}
+/*==========schedule==========*/
+.schedule h3{
+    margin: 2rem 0 0.5rem 0;
+    text-transform: capitalize;
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.schedule .box-schedule{
+    width: 100%;
+    height:fit-content;
+    border-left: 2px dashed red;
+    position: relative;
+}
+.active{
+    background-color: red;
+    color: white;
+}
+.not-active{
+    background-color: white;
+    color: red;
+}
+.end{
+    bottom: 0;
+    left: 0;
+}
+.circle{
+    position: absolute;
+    margin-left: -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    padding: 1rem;
+    
+    font-weight: 700;
+    font-size: 1rem;
+    border: red dashed 2px;
+
+}
+.schedule .img{
+    margin-left: 5vw;
+}
+.schedule .img img{
+    width: 100%;
+}
+.schedule a{
+ color: white;
+ font-size: 1.75vw;
+} 
+
+.schedule-tab{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.schedule-tab img{
+    width: 200px;
+}
+.schedule-tab h3{
+    width: 30%;
+}
+.schedule-tab h3{
+    margin-left: 30px;
+    width: 100%;
+    text-transform: capitalize;
+    color: black;
+    font-size: 2vw;
+    font-weight: 700;
+}
+.schedule-tab p{
+    margin-left: 30px;
+    width: 100%;
+    text-transform: capitalize;
+    color: rgb(85, 85, 85);
+    font-size: 1.75vw;
+}
+.heading-schedule{
+    margin:2rem;
+}
+.schedule .btn{
+    margin-top: 2rem;
+    font-size: 1rem;
+    padding: 1rem;
+}
+.about .btn{
+    font-size: 1rem;
+    padding: 1rem;
+}
+.hero .btn{
+    font-size: 1rem;
+    padding: 1rem;
+}
+footer{
+    background-color: var(--blue-dark);
+    text-align: center;
+    padding: 2rem;
+}
+footer p{
+    color: grey;
+}
